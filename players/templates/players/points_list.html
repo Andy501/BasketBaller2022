@@ -1,0 +1,32 @@
+
+{% extends "players/base.html" %}
+
+{% block content %}
+
+
+<div class="container listy">
+
+{% for player in object_list %}
+
+
+<ul> 
+
+    
+    
+    <li><a href="{% url 'players:p_details' player.player.id %}">{{ player.player.f_name }} {{ player.player.l_name }}</a></li>
+    <li>#{{ player.player.number }} </li>
+
+
+    
+
+</ul>
+
+
+
+
+{% endfor %}
+</div>
+
+
+{% endblock %} 
+

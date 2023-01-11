@@ -1,0 +1,13 @@
+<!-- NOTE: imported to base as include statment -->
+{% load static %}
+<img style="width:10%" src="{%static 'Images/LOGOS/NBA_LOGO.webp' %}" alt="">
+<form action="{%url 'players:search' %}" method="get">
+    <input name="search" type="" id="" placeholder="The Question...">
+    <!-- TODO: MAKE Stand alone view for search.  -->
+    <!-- Search is a list view of User requested key word -->
+    <!-- Point the user back to appropriate list view of asked for items.   -->
+    <button type="submit">Search</button>   
+</form>
+
+<!-- May require a DB of all areanas and a compare against googed address: Make the DB as flat as possible -->
+

@@ -1,0 +1,102 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="staticfiles/style.css">
+    <link rel="stylesheet" href="{%static 'css/style.css' %}">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/a65ab32e45.js" crossorigin="anonymous"></script>
+   
+    <title>Weather_API</title>
+</head>
+
+<body>
+    <div class="fancy">
+
+    <!-- HEADER ... Todo Fix darkness of the water-->
+<header class="all_water">
+    <h1><img  src="{%static 'images/water_logo.png' %}" alt=""></h1>
+    <!-- <h1><img  src="wave_vid.gif" alt=""></h1> -->
+</header>
+
+
+
+ <!-- NAV -->
+<nav>
+    <ul>
+        <li><a href="{%url 'UI_nav:home' %}">Home</a></li>
+        <li><a href="{%url 'portfolio:home' %}">About</a></li>
+    </ul>
+</nav>
+
+ <!-- Content area -->
+
+<main>
+     <!-- image changes based on wheather -->
+    <img id="temp_desc" src="{%static 'images/sunny.png' %}" alt="">
+
+
+    
+     <!-- right side data inline-->
+
+     <!-- entry point for interacting with API with FE JS-->
+
+     <!-- TODO Js equivalaent to python f string -->
+                        <div class="container">
+                             <!-- This line is semi broken but ignoring it to get up into production.  -->
+                            <div id="city_query0"  value="0"></div> 
+                           
+
+
+
+
+
+                        
+            <div class="CityNameBanner">
+                <h1 id="city_name">MIAMI</h1>
+            </div>
+        <div class="data_ui">
+
+            <div class="value">
+
+                <div class="text_box">
+                    <ul>
+                        <!-- override text color and size js red if over 89degrees-->
+                        <li class="texty" id="temperature">NaN</li>
+                        <li class="texty" id="Time">00:00:00</li>
+
+                       
+                        <li class="texty" id="Percip_percent"><h5>Current Percipitation:</h5>
+                            <ul>
+                            <li id="percip">NONE</li>
+                            </ul>
+                        </li>
+                    </ul>
+                     
+                    
+                
+                </div>
+                <!-- the image is occasionally actually an ad for fasion that matches weather-->
+                <img class="righty_img" src="{%static 'images/sun_glasses.png' %}" alt="">
+            </div>
+
+        </div>
+     </div>
+
+</main>
+
+<footer>
+
+</footer>
+</div>
+
+
+
+
+<script src="{%static 'scripts/scripts.js' %}"></script>
+
+</body>
+</html>

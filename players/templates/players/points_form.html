@@ -1,0 +1,53 @@
+
+{% extends "players/base.html" %}
+<!-- TODO: what is this form?  -->
+
+
+
+
+
+
+{% block content %}
+<div class="listy">
+
+
+
+
+<div class="container">
+<ul>
+<li>{{ object.player.f_name }} {{ object.player.l_name }} </li>
+<li>#{{ object.player.number }} </li>
+</ul>
+<form method="post">
+
+
+
+
+{% csrf_token %}
+{{ form.as_p }}
+
+<!-- try button value save -->
+<button class="btn btn-primary" type="submit" >Update</button>
+</form>
+<div class="text-center">
+<a href="{% url 'players:p_list' %}">View All</a>
+</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+
+
+{% endblock %}
+

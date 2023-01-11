@@ -1,0 +1,258 @@
+*{
+    margin:0;
+    padding:0;
+}
+
+.fancy{
+background-color: antiquewhite;
+   
+}
+
+
+header{
+    margin:0;
+    padding:0;
+
+
+}
+
+header img{
+    height: 40px; 
+    
+    
+}
+
+header h1{
+    display: inline-block; 
+}
+
+.all_water{
+    height: 100px;
+    background-image: url('../images/wave_vid.gif');
+    background-size:cover;
+}
+
+
+
+
+nav{
+    border: 3.2px solid #333;
+    
+    /* margin: 6rem auto;  */
+    height: 45px; 
+    background-image: url("../images/bloo.jpg");
+    background-size: cover;
+    
+}
+
+
+
+nav ul{
+    margin:0;
+    padding: 0;
+    list-style-type:none;
+    font-size: 1.5rem;
+    
+    display: flex;
+    justify-content: space-evenly;
+    /* justify-content: center; */
+}
+
+
+
+nav a{
+    padding: 0.5rem 1rem; 
+
+    display: block;
+    text-decoration: none;
+}
+
+
+
+/* nav a:focus{
+   
+} */
+
+
+
+nav a:hover{
+    background-color: grey;
+    color: orange; 
+    border-radius: 33px;
+    
+  
+}
+
+
+/* IF RAIN Grey UI, IF SUNNY BLUE */
+main{
+
+    margin: 2rem 25rem;
+    background-image: url("../images/perperplanes.jpg");
+    background-size: cover;
+    height: 75vh; 
+    border: 3.2px solid rgba(132, 125, 125, 0.877);
+    background-color: rgba(213, 203, 203, 0.877);
+    border-radius: 33px;
+    
+}
+
+
+
+main img{
+    height: 105px; 
+}
+
+main .container{
+    background-color: rgba(176, 239, 241, 0.669);
+    border: 3.2px solid rgba(0, 0, 0, 0.877);
+    border-radius: 33px; 
+    height: 70%;
+    margin: 66px 50px;
+    
+}
+
+
+
+
+h1 img{
+    height: 100px; 
+    
+}
+
+
+.container form{
+  display:flex;
+  margin-top:20px;
+  justify-content: center;
+
+
+}
+
+.temp_spacer{
+    height:20px;
+}
+
+
+
+.question {
+    background-color: rgb(218, 230, 242);
+}
+
+input[type="text"]::placeholder {
+                 
+    /* Firefox, Chrome, Opera */
+    text-align: center;
+}
+
+
+
+
+/* Try removing some padding from next box */
+.CityNameBanner h1{
+    display:flex; 
+    justify-content: center;
+    
+    margin: 4px;
+    font-size:30px;
+    color:red;
+}  
+#city_name{
+    font-size:  80px; 
+}
+
+
+
+
+.data_ui{
+    display:block;
+    height: 60%;
+    margin: 15px 50px;
+    border-radius: 10px; 
+    background-color: rgba(176, 239, 241, 0.669);
+
+}
+
+
+.value{
+    display:flex;
+/* margin: 2px auto;  */
+    
+}
+
+.text_box{
+    margin: 10px auto; 
+    width: 50%;
+}
+
+.text_box ul{
+    list-style-type: none;
+}
+
+.texty{
+    font-size: 30px; 
+}
+
+#temperature{
+    font-size: 65px;
+    margin-bottom: 20px; 
+    color: red;
+}
+
+
+
+footer{
+ 
+    height: 200px;
+    background-color: antiquewhite;
+}
+
+
+
+
+/* Responsive  Below 1288px */
+@media (max-width: 1288px){
+  
+
+
+    main{
+
+        margin: 0;
+        background-image: none; 
+        background-size: cover;
+        height: 75vh; 
+        border: 3.2px solid rgba(132, 125, 125, 0.877);
+        background-color: rgba(213, 203, 203, 0.877);
+        border-radius: 33px;
+        
+    }
+    
+    
+    
+    main img{
+        height: 105px; 
+    }
+    
+    main .container{
+        background-color: rgba(176, 239, 241, 0.669);
+        border:none;
+        border-radius: hidden; 
+        height: 70%;
+        margin: 0;
+    }
+
+    
+.data_ui{
+    display:block;
+    height: 100%;
+    margin: 0;
+    border-radius: 10px; 
+    background-color: rgba(176, 239, 241, 0.669);
+
+}
+
+
+
+    
+    
+}

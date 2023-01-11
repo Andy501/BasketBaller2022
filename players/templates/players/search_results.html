@@ -1,0 +1,48 @@
+
+{% extends "players/base.html" %}
+
+<!-- List view of search results -->
+
+
+{% block content %}
+
+<div class= "listy">
+<div class="container">
+<h3>The Answer: </h3>
+{% if query %}
+    <h2>
+    {% with results.count as total_results %}
+    Found {{ total_results }} result{{ total_results|pluralize }}
+    {% endwith %}
+
+    </h2>
+
+    {% for p in results %}
+    <ul>
+        <li>{{ p.f_name }} {{ p.l_name }} </li>
+        <ul>
+            <ul><li>
+                <a href="{{p.get_url}}">Continue...</a>
+            </li></ul>
+        </ul>
+    </ul>
+
+
+
+{% empty %}  
+<h3>No results found.</h3>
+{% endfor %}
+
+{% endif %}
+</div>
+<!-- TODO:V2 on hover darkening and blue box -->
+
+<!-- AD injection point -->
+
+
+</div>
+
+
+
+
+{% endblock %}

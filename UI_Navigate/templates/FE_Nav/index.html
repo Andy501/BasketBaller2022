@@ -1,0 +1,57 @@
+{%load static%}
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Testing only -->
+    <link rel="stylesheet" href="{% static 'css/cutesy.css'%}">
+
+
+    <title>Annias 954-716-3752</title>
+</head>
+<body>    
+
+<!-- LAST UI STEP CHANGE FOCUS AREA of backgournd robot image slightly right -->
+
+<div class="intro_area">
+<h1>Annias Scott III</h1>
+<h2>Software Developer </h2>
+<h4>Call: 954-716-3752</h4>
+</div>
+<div class="container">
+    <div class="feature">
+        <a href="{%url 'portfolio:home'%}">
+        <h6>About Me</h6>
+        <img src="{% static 'images/about_me.png' %}" alt="">
+        </a>
+    </div>
+
+    <div class="feature">
+        <a href="{% url 'players:home' %}">
+        <h6>Basket Baller CRUD</h6>
+        <img src="{% static 'images/baller_crud.png' %}"alt="">
+        </a>
+    </div>
+
+    <div class="feature">
+        <a href="{% url 'Weathered:wea_fe' %}">
+        <h6>JavaScript API Consumption</h6>
+        <img src="{% static 'images/api_eat.png' %}" alt="">
+        </a>
+    </div>
+
+    <!-- Entry Point for Class Roster API, Starting as bare list wrapping in react UI -->
+
+    <div class="feature">
+        <a href="https://www.linkedin.com/pulse/sorting-cleaning-data-python-annias-scott-iii/">
+        <h6> Data Science: Python & Excel</h6>
+        <img src="{% static 'images/Ai_pict.png' %}" alt="">
+        </a>  
+    </div> 
+</div> 
+</body>
+</html>

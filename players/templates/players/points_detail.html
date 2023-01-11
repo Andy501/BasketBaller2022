@@ -1,0 +1,55 @@
+
+{% extends "players/base.html" %}
+{% load static %}
+
+{% block content %}
+
+<!-- Regoranize layout -->
+
+<div class="container listy">
+
+    <img src="{%static 'Images/Player_Images/no_image_available.jpg' %}" alt="">
+    
+    <div>
+    <ul>
+    <li>{{ object.player.f_name }} {{ object.player.l_name }} </li>
+    <li>#{{ object.player.number }} </li>
+    </ul>
+
+    <!-- TODO: V2 Add Picture field to db -->
+    <!-- TODO: Test picture not found/default image -->
+    <!-- TODO: V2 JS Fancy 3 random animations on hover -->
+    </div>
+    <ul>
+    
+      
+        <li>
+            <h4>PPG:<span>{{ object.ppg }}</span></h4>
+        </li>
+    <li>
+        <h6>Career Point Total: {{ object.tot_points }}</h6>
+    </li>
+    </ul>
+
+  
+            <!--route to edit players points, player name not editable -->
+            <a href="{% url 'players:p_list' %}">Players</a>
+            <a href="{% url 'players:p_update' object.player.id %}"">Update Points</a>
+           
+    
+
+   
+
+<div>
+
+</div>
+
+
+
+<div class="float-end">
+<!-- Latest Tweets  -->
+    {% include "players/twitter_feed.html" %}
+</div>
+</div>
+
+{% endblock %}

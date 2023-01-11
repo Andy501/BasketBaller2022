@@ -1,0 +1,91 @@
+*{
+    background: url('../images/ai_textured_background.svg') no-repeat center center fixed;
+    background-size: cover;
+    margin:0;
+    padding:0; 
+    
+}
+
+body{
+    
+    width: 1125px; 
+    margin:0 auto;
+ 
+}
+
+.intro_area{
+    padding: 54px;
+    height: 100px;
+    width:355px;
+    color: rgb(9, 9, 170);
+
+}
+
+.intro_area h1{
+    padding: 5px;
+    font-size: 48px;
+    background: rgba(128, 128, 128, 0.107);
+}
+
+.intro_area h2{
+    padding-left: 18px; 
+    background: rgba(128, 128, 128, 0.107);
+}
+
+.intro_area h4{
+    background: rgba(128, 128, 128, 0.107);
+    padding-left: 18px; 
+    padding-bottom: 5px;
+}
+
+.container .feature
+{
+    margin: 20px 60px  40px;
+            width:520px;
+            height:540px;
+            background:#676470;
+            transition:all 0.3s ease;
+            border-radius: 6px;
+        
+}
+
+
+.feature h6{
+    background:#676470;
+    margin:0; 
+    padding-left:34px;
+    font-size: 35px;
+    border-radius: 6px;
+}
+
+.feature:hover
+{
+        box-shadow: inset 0 0 0 25px #53a7ea;
+}
+
+.feature h6:hover{
+    color:black; 
+    box-shadow: inset 0 0 0 47px #53a7ea;
+
+    border-radius: 6px;
+}
+
+.intro_area:hover{
+    color:black; 
+}
+
+
+img{
+    height:500px;
+    border-radius: 6px;
+}
+
+a{
+    text-decoration: none;
+    color: black; 
+}
+/* responsive for cellphone */
+/* .container{
+    margin: 10px 510px 20px;
+
+} */
